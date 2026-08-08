@@ -1,8 +1,21 @@
 aid: aspiration
 name: GreenFi
-description: 'GreenFi is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'GreenFi is a climate-focused consumer financial technology company — the
+  rebranded continuation of Aspiration''s consumer banking arm. It offers a combined
+  checking and savings account, high-yield savings with goal-based "Savings Pods",
+  a debit card, a GreenFi Plus subscription tier, investing through its Redwood fund,
+  and a cash-back Marketplace of sustainable brands, alongside impact programs such
+  as Plant Your Change, tree planting and carbon offsetting. GreenFi is a financial
+  technology company, not a bank; banking services and the debit card are provided
+  by Coastal Community Bank, Member FDIC. Aspiration spun its consumer unit out in
+  2024 to Mission Financial Partners, LLC, which rebranded it GreenFi in April 2025;
+  Coastal Financial Corporation acquired the GreenFi brand in January 2026. It is a
+  separate company from Aspiration Partners, Inc., the enterprise carbon business
+  that entered Chapter 11. GreenFi ships iOS, Android and web applications to end
+  users and publishes no public developer program, API reference, or machine-readable
+  specification.'
 url: https://raw.githubusercontent.com/api-evangelist/aspiration/refs/heads/main/apis.yml
+image: https://marketing.greenfi.com/images/favicons/favicon-128x128.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +25,15 @@ created: '2026-08-06'
 modified: '2026-08-06'
 tags:
 - Company
+- Banking
+- Financial Services
+- Fintech
+- Consumer Banking
+- Savings
+- Investing
+- Sustainability
+- Climate
+- Marketplace
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +41,51 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/aspiration-domain-security.yml
+- type: LLMsTxt
+  url: llms/aspiration-llms.txt
 - type: Website
+  url: https://www.greenfi.com/
+- type: Blog
+  url: https://www.greenfi.com/resources
+- type: Support
+  url: https://www.greenfi.com/contact-us
+- type: HelpCenter
+  url: https://my.greenfi.com/faq/
+- type: Pricing
+  url: https://www.greenfi.com/fees
+- type: SignUp
+  url: https://my.greenfi.com/register/
+- type: Login
+  url: https://my.greenfi.com/
+- type: TermsOfService
+  url: https://www.greenfi.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.greenfi.com/2024-privacy-policy
+- type: SecondaryMarket
   url: https://forgeglobal.com/aspiration_stock/
+x-enrichment:
+  date: '2026-08-06'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    GreenFi ships only consumer banking apps — its 178-URL sitemap contains no developer,
+    API or integration page, and api.greenfi.com answers a bare "{}" at the root while
+    returning 403 for /openapi.json, /graphql and every /.well-known/ path.
+  evidence:
+  - url: https://www.greenfi.com/sitemap.xml
+    status: 200
+  - url: https://api.greenfi.com/openapi.json
+    status: 403
+  - url: https://www.greenfi.com/.well-known/agent-card.json
+    status: 403
+  - url: https://www.greenfi.com/llms.txt
+    status: 403
+  - url: https://developer.greenfi.com/
+    status: 0
+  checked: '2026-08-06'
