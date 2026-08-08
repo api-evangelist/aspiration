@@ -42,5 +42,22 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-GreenFi is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/aspiration_stock/
+GreenFi is a climate-focused consumer financial technology company — the rebranded continuation of
+Aspiration's consumer banking arm. It offers a combined checking and savings account, high-yield
+savings with goal-based "Savings Pods", a debit card, a GreenFi Plus subscription tier, investing
+through its Redwood fund, and a cash-back Marketplace of sustainable brands, alongside impact
+programs such as Plant Your Change, tree planting and carbon offsetting. GreenFi is a financial
+technology company, not a bank; banking services and the debit card are provided by Coastal
+Community Bank, Member FDIC.
+
+Aspiration spun its consumer unit out in 2024 to Mission Financial Partners, LLC, which rebranded it
+GreenFi in April 2025; Coastal Financial Corporation acquired the GreenFi brand in January 2026. It
+is a **separate company** from Aspiration Partners, Inc., the enterprise carbon business that entered
+Chapter 11.
+
+**No public API surface.** As of 2026-08-06 GreenFi publishes no developer portal, API reference,
+SDK, webhook catalog, or machine-readable specification. See `x-coverage` in `apis.yml` for the
+probed evidence.
+
+- https://www.greenfi.com/
+- https://forgeglobal.com/aspiration_stock/ (secondary-market listing, the harvest source)

@@ -1,0 +1,80 @@
+# GreenFi
+
+> GreenFi (formerly Aspiration) is a climate-focused consumer financial technology company in the
+> United States. It offers a combined checking and savings account, high-yield savings with
+> goal-based "Savings Pods", a debit card, a GreenFi Plus subscription tier, investing through its
+> Redwood fund, and a cash-back Marketplace of sustainable brands, alongside impact programs such as
+> Plant Your Change, tree planting and carbon offsetting. GreenFi is a financial technology company,
+> not a bank; banking services and the debit card are provided by Coastal Community Bank, Member FDIC.
+
+## Corporate identity
+
+- Aspiration spun out its consumer financial services unit in 2024 to Mission Financial Partners, LLC.
+- Mission Financial Partners rebranded that unit as GreenFi on 22 April 2025; aspiration.com now
+  redirects to https://www.greenfi.com/resources/introducing-greenfi.
+- Coastal Financial Corporation, the holding company of Coastal Community Bank, acquired the GreenFi
+  brand in January 2026 and took over governance and brand stewardship.
+- GreenFi is a separate company from Aspiration Partners, Inc., the enterprise carbon-credit business
+  that filed for Chapter 11 in 2025. Do not conflate the two.
+
+## API surface
+
+GreenFi publishes **no public API**. As of 2026-08-06 there is no developer portal, no API reference,
+no SDK, no webhook catalog, and no machine-readable specification (OpenAPI, AsyncAPI, GraphQL SDL,
+Postman collection or JSON Schema) at any GreenFi or Aspiration host. Consumer accounts are reachable
+to third parties only through bank-data aggregators, not through a first-party GreenFi API.
+
+Probed and not found (2026-08-06): `www.greenfi.com/llms.txt`, `www.greenfi.com/openapi.json`,
+`www.greenfi.com/.well-known/security.txt`, `www.greenfi.com/.well-known/agent-card.json`,
+`www.greenfi.com/.well-known/agent.json`, `api.greenfi.com/openapi.json`,
+`api.aspiration.com/openapi.json`, `developer.greenfi.com`, `developers.greenfi.com`,
+`status.greenfi.com`, `trust.greenfi.com`. `my.greenfi.com` answers HTTP 200 with the same
+AngularJS single-page-application shell for every path, including `/openapi.json` and
+`/.well-known/agent-card.json` — those 200s are not documents.
+
+## Products
+
+- [Checking & Savings](https://www.greenfi.com/checking-savings): fee-free combined account
+- [High-yield savings](https://www.greenfi.com/savings): Savings Pods, goal-based saving
+- [Debit card](https://www.greenfi.com/debit-card)
+- [GreenFi Plus](https://www.greenfi.com/greenfi-plus): subscription tier
+- [Investing — Redwood fund](https://funds.greenfi.com/redwood/)
+- [Marketplace](https://www.greenfi.com/marketplace): cash back at ~150 sustainable brands
+- [Plant Your Change](https://www.greenfi.com/plant-your-change) / [Tree planting](https://www.greenfi.com/tree-planting)
+- [Carbon program](https://www.greenfi.com/carbon-program) / [Planet Protection](https://www.greenfi.com/planet-protection)
+
+## Company
+
+- [Homepage](https://www.greenfi.com/)
+- [Who we are](https://www.greenfi.com/who-we-are)
+- [Blog / Resources](https://www.greenfi.com/resources)
+- [Press](https://www.greenfi.com/press)
+- [Careers](https://www.greenfi.com/careers)
+- [Partners](https://www.greenfi.com/partners): marketing/affiliate partnerships only, no technical integration
+
+## Support and account
+
+- [Contact us](https://www.greenfi.com/contact-us)
+- [FAQs](https://my.greenfi.com/faq/)
+- [Sign up](https://my.greenfi.com/register/)
+- [Log in](https://my.greenfi.com/)
+
+## Policies
+
+- [Terms of use](https://www.greenfi.com/terms-of-use)
+- [Privacy policy](https://www.greenfi.com/2024-privacy-policy)
+- [Security policy](https://www.greenfi.com/security-policy): customer-facing security overview and a
+  fraud contact (infosec-team@greenfi.com); no researcher vulnerability-disclosure program or bug bounty
+- [Fees](https://www.greenfi.com/fees) / [Fee schedule](https://www.greenfi.com/checking-savings-fee-schedule)
+- [Policies index](https://www.greenfi.com/policies)
+- [Disclaimers](https://www.greenfi.com/disclaimers)
+
+## API Evangelist artifacts
+
+- [Domain security probe](security/aspiration-domain-security.yml): TLS 1.3, HSTS 31536000, SPF and
+  DMARC present (p=none), no DNSSEC, no CAA records
+
+---
+generated: 2026-08-06
+method: generated
+source: apis.yml + https://www.greenfi.com/sitemap.xml (no provider-published llms.txt exists)
