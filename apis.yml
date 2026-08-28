@@ -15,6 +15,17 @@ description: 'GreenFi is a climate-focused consumer financial technology company
   users and publishes no public developer program, API reference, or machine-readable
   specification.'
 url: https://raw.githubusercontent.com/api-evangelist/aspiration/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://marketing.greenfi.com/images/favicons/favicon-128x128.png
 x-type: company
 x-source: harvest:secondary-market
